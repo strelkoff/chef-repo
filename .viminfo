@@ -8,16 +8,19 @@
 # hlsearch on (H) or off (h):
 ~H
 # Last Search Pattern:
-~MSle0~/depe
+~MSle0~/drbd_util
 
 # Command Line History (newest to oldest):
 :wq
 :q
-:10
 :q!
+:43
+:10
 :Q
 
 # Search String History (newest to oldest):
+??drbd_util
+??xfs
 ??depe
 
 # Expression History (newest to oldest):
@@ -27,10 +30,10 @@
 # Input Line History (newest to oldest):
 
 # Registers:
-""1	LINE	0
-	ssl_verify_mode :verify_peer
+"1	LINE	0
+	  options %w(inline_thold=120 udp_rss=1) # Specific loading options
 "2	LINE	0
-	
+	  reload false # We don't want to reload our network module
 "3	LINE	0
 	
 "4	LINE	0
@@ -38,29 +41,101 @@
 "5	LINE	0
 	  action :install
 "6	LINE	0
-	package 'elrepo-release' do
+	package 'kmod-drbd84' do
 "7	LINE	0
-	
-"8	LINE	0
 	end
+"8	LINE	0
+	  action :install
 "9	LINE	0
-	  mode "0644"
-"-	CHAR	0
-	c
+	package 'kmod-drbd84' do
+""-	CHAR	0
+	2
 
 # File marks:
-'0  10  15  /tmp/knife-edit-20160820-3672-abnilb.json
-'1  2  27  ~/.chef/knife.rb
-'2  12  27  ~/.chef/knife.rb
-'3  6  19  ~/cookbooks/book/metadata.rb
-'4  8  0  ~/cookbooks/book/recipes/default.rb
-'5  1  0  ~/cookbooks/book/metadata.rb
-'6  11  0  ~/cookbooks/book/recipes/default.rb
-'7  5  0  ~/cookbooks/book/recipes/default.rb
-'8  10  16  /tmp/knife-edit-20160820-3099-15ua01g.json
-'9  10  0  ~/cookbooks/book/recipes/default.rb
+'0  13  17  /tmp/knife-edit-20160820-4693-1nu858v.json
+'1  13  17  /tmp/knife-edit-20160820-4683-1cqv0rs.json
+'2  13  17  /tmp/knife-edit-20160820-4675-jqoxse.json
+'3  13  16  /tmp/knife-edit-20160820-4667-107hnc2.json
+'4  16  14  ~/cookbooks/book/recipes/default.rb
+'5  10  28  /tmp/knife-edit-20160820-4626-1rouc2n.json
+'6  10  28  /tmp/knife-edit-20160820-4616-rfkxva.json
+'7  1  0  /tmp/knife-edit-20160820-4608-y3dv9l.json
+'8  16  0  /tmp/knife-edit-20160820-4600-nmog4q.json
+'9  28  19  ~/cookbooks/kernel-modules/recipes/default.rb
 
 # Jumplist (newest first):
+-'  13  17  /tmp/knife-edit-20160820-4693-1nu858v.json
+-'  1  0  /tmp/knife-edit-20160820-4693-1nu858v.json
+-'  13  17  /tmp/knife-edit-20160820-4683-1cqv0rs.json
+-'  1  0  /tmp/knife-edit-20160820-4683-1cqv0rs.json
+-'  13  17  /tmp/knife-edit-20160820-4675-jqoxse.json
+-'  1  0  /tmp/knife-edit-20160820-4675-jqoxse.json
+-'  13  16  /tmp/knife-edit-20160820-4667-107hnc2.json
+-'  1  0  /tmp/knife-edit-20160820-4667-107hnc2.json
+-'  16  14  ~/cookbooks/book/recipes/default.rb
+-'  1  0  ~/cookbooks/book/recipes/default.rb
+-'  10  28  /tmp/knife-edit-20160820-4626-1rouc2n.json
+-'  1  0  /tmp/knife-edit-20160820-4626-1rouc2n.json
+-'  10  28  /tmp/knife-edit-20160820-4616-rfkxva.json
+-'  1  0  /tmp/knife-edit-20160820-4616-rfkxva.json
+-'  1  0  /tmp/knife-edit-20160820-4608-y3dv9l.json
+-'  16  0  /tmp/knife-edit-20160820-4600-nmog4q.json
+-'  1  0  /tmp/knife-edit-20160820-4600-nmog4q.json
+-'  28  19  ~/cookbooks/kernel-modules/recipes/default.rb
+-'  26  0  ~/cookbooks/kernel-modules/recipes/default.rb
+-'  39  2  ~/cookbooks/drbd/recipes/default.rb
+-'  26  0  ~/cookbooks/drbd/recipes/default.rb
+-'  1  0  ~/cookbooks/kernel-modules/recipes/default.rb
+-'  28  0  ~/cookbooks/drbd/recipes/default.rb
+-'  10  23  ~/cookbooks/drbd/metadata.rb
+-'  39  0  ~/cookbooks/modules/recipes/config.rb
+-'  71  2  ~/cookbooks/modules/recipes/config.rb
+-'  14  2  ~/cookbooks/modules/attributes/default.rb
+-'  29  0  ~/cookbooks/modules/recipes/default.rb
+-'  28  2  ~/cookbooks/modules/recipes/default.rb
+-'  27  0  ~/cookbooks/modules/recipes/default.rb
+-'  25  0  ~/cookbooks/modules/recipes/default.rb
+-'  29  0  ~/cookbooks/drbd/recipes/default.rb
+-'  11  0  ~/cookbooks/drbd/metadata.rb
+-'  8  82  ~/cookbooks/modules/metadata.rb
+-'  7  0  ~/cookbooks/modules/metadata.rb
+-'  1  0  ~/cookbooks/modules/metadata.rb
+-'  12  0  ~/cookbooks/drbd/metadata.rb
+-'  1  0  ~/cookbooks/modules/recipes/default.rb
+-'  57  4  ~/cookbooks/modules/recipes/config.rb
+-'  1  0  ~/cookbooks/modules/attributes/default.rb
+-'  1  0  ~/cookbooks/modules/recipes/config.rb
+-'  24  0  ~/cookbooks/drbd/recipes/default.rb
+-'  74  0  ~/cookbooks/drbd/recipes/pair.rb
+-'  20  4  /tmp/knife-edit-20160820-4033-hzyqxh.json
+-'  1  0  /tmp/knife-edit-20160820-4033-hzyqxh.json
+-'  21  4  /tmp/knife-edit-20160820-4025-h1cctt.json
+-'  1  0  /tmp/knife-edit-20160820-4025-h1cctt.json
+-'  21  14  /tmp/knife-edit-20160820-3981-hxz073.json
+-'  1  0  /tmp/knife-edit-20160820-3981-hxz073.json
+-'  20  14  /tmp/knife-edit-20160820-3973-uplhkx.json
+-'  1  0  /tmp/knife-edit-20160820-3973-uplhkx.json
+-'  10  18  /tmp/knife-edit-20160820-3891-17cjuh5.json
+-'  1  0  /tmp/knife-edit-20160820-3891-17cjuh5.json
+-'  10  23  /tmp/knife-edit-20160820-3883-m15ei9.json
+-'  1  0  /tmp/knife-edit-20160820-3883-m15ei9.json
+-'  1  0  ~/cookbooks/drbd/templates/default/res.erb
+-'  71  0  ~/cookbooks/drbd/tasks/maintainers.rb
+-'  1  0  ~/cookbooks/drbd/tasks/maintainers.rb
+-'  1  0  ~/cookbooks/drbd/spec/unit/recipes/default_spec.rb
+-'  1  0  ~/cookbooks/drbd/spec/spec_helper.rb
+-'  5  0  ~/cookbooks/drbd/attributes/default.rb
+-'  1  0  ~/cookbooks/drbd/attributes/default.rb
+-'  77  2  ~/cookbooks/drbd/recipes/pair.rb
+-'  72  0  ~/cookbooks/drbd/recipes/pair.rb
+-'  88  2  ~/cookbooks/drbd/recipes/pair.rb
+-'  16  13  ~/cookbooks/drbd/examples/roles/drbd-pair.rb
+-'  1  0  ~/cookbooks/drbd/examples/roles/drbd-pair.rb
+-'  17  13  ~/cookbooks/drbd/examples/roles/drbd-pair-master.rb
+-'  1  0  ~/cookbooks/drbd/examples/roles/drbd-pair-master.rb
+-'  1  0  ~/cookbooks/drbd/recipes/pair.rb
+-'  22  0  ~/cookbooks/drbd/recipes/default.rb
+-'  1  0  ~/cookbooks/drbd/metadata.rb
 -'  10  15  /tmp/knife-edit-20160820-3672-abnilb.json
 -'  1  0  /tmp/knife-edit-20160820-3672-abnilb.json
 -'  2  27  ~/.chef/knife.rb
@@ -74,12 +149,11 @@
 -'  10  0  ~/cookbooks/book/recipes/default.rb
 -'  10  16  /tmp/knife-edit-20160820-3099-15ua01g.json
 -'  1  0  /tmp/knife-edit-20160820-3099-15ua01g.json
--'  12  0  ~/cookbooks/book/recipes/default.rb
+-'  20  0  ~/cookbooks/book/recipes/default.rb
 -'  11  1  ~/.gitignore
 -'  1  0  ~/.gitignore
 -'  10  15  /tmp/knife-edit-20160820-2725-14djpaa.json
 -'  1  0  /tmp/knife-edit-20160820-2725-14djpaa.json
--'  1  0  ~/cookbooks/book/recipes/default.rb
 -'  10  21  /tmp/knife-edit-20160820-2684-ov3ru1.json
 -'  1  0  /tmp/knife-edit-20160820-2684-ov3ru1.json
 -'  1  0  ~/cookbooks/yum-elrepo/attributes/elrepo.rb
@@ -89,235 +163,147 @@
 -'  1  0  /tmp/knife-edit-20160820-2665-13gpmtj.json
 -'  10  5  /tmp/knife-edit-20160820-2661-1rn2w2j.json
 -'  1  0  /tmp/knife-edit-20160820-2661-1rn2w2j.json
--'  10  0  /tmp/knife-edit-20160820-2653-dg629o.json
--'  1  0  /tmp/knife-edit-20160820-2653-dg629o.json
--'  1  3204  ~/cookbooks/drbd/metadata.json
--'  23  0  ~/cookbooks/drbd/recipes/default.rb
--'  1  0  ~/cookbooks/drbd/recipes/default.rb
--'  11  23  /tmp/knife-edit-20160820-2617-qvfu4q.json
--'  1  0  /tmp/knife-edit-20160820-2617-qvfu4q.json
--'  11  23  /tmp/knife-edit-20160820-2613-dtbx05.json
--'  1  0  /tmp/knife-edit-20160820-2613-dtbx05.json
--'  11  23  /tmp/knife-edit-20160820-2609-e0t553.json
--'  1  0  /tmp/knife-edit-20160820-2609-e0t553.json
--'  11  9  /tmp/knife-edit-20160820-2603-jqan2t.json
--'  1  0  /tmp/knife-edit-20160820-2603-jqan2t.json
--'  11  15  /tmp/knife-edit-20160819-2579-dfbf3r.json
--'  1  0  /tmp/knife-edit-20160819-2579-dfbf3r.json
--'  11  17  /tmp/knife-edit-20160819-2575-wmnk7z.json
--'  1  0  /tmp/knife-edit-20160819-2575-wmnk7z.json
--'  10  18  /tmp/knife-edit-20160819-2548-1g1z3z8.json
--'  1  0  /tmp/knife-edit-20160819-2548-1g1z3z8.json
--'  10  13  /tmp/knife-edit-20160819-2544-382034.json
--'  1  0  /tmp/knife-edit-20160819-2544-382034.json
--'  1  0  /tmp/knife-edit-20160819-2534-ypm0hb.json
--'  11  18  /tmp/knife-edit-20160819-2525-owwm36.json
--'  1  0  /tmp/knife-edit-20160819-2525-owwm36.json
--'  12  2  /tmp/knife-edit-20160819-2521-130ecye.json
--'  1  0  /tmp/knife-edit-20160819-2521-130ecye.json
--'  1  0  /tmp/knife-edit-20160819-2513-vtfsgt.json
--'  2  19  /tmp/knife-edit-20160819-2509-196nf6l.json
--'  1  0  /tmp/knife-edit-20160819-2509-196nf6l.json
--'  10  14  /tmp/knife-edit-20160819-2477-1lu9ma1.json
--'  1  0  /tmp/knife-edit-20160819-2477-1lu9ma1.json
--'  9  0  /tmp/knife-edit-20160819-2438-fxe2bx.json
--'  1  0  /tmp/knife-edit-20160819-2438-fxe2bx.json
--'  2  35  ~/cookbooks/drbd/attributes/default.rb
--'  6  0  ~/cookbooks/drbd/attributes/default.rb
--'  1  0  ~/roles/README.md
--'  1  0  ~/cookbooks/drbd/templates/default/res.erb
--'  7  0  ~/cookbooks/drbd/attributes/default.rb
--'  89  0  ~/cookbooks/drbd/recipes/pair.rb
--'  1  0  ~/cookbooks/drbd/recipes/pair.rb
--'  1  0  ~/cookbooks/drbd/attributes/default.rb
--'  10  7  ~/.gitignore
--'  9  0  ~/.gitignore
--'  5  0  ~/.chef/knife.rb
--'  11  0  ~/.chef/knife.rb
--'  10  0  ~/.chef/knife.rb
--'  10  20  /tmp/knife-edit-20160819-1870-e2agjz.json
--'  1  0  /tmp/knife-edit-20160819-1870-e2agjz.json
--'  1  0  /tmp/knife-edit-20160819-1865-15a98yf.json
--'  4  0  /tmp/knife-edit-20160819-1859-z51a7r.json
--'  1  0  /tmp/knife-edit-20160819-1859-z51a7r.json
--'  9  19  /tmp/knife-edit-20160819-1849-1yztiqq.json
--'  1  0  /tmp/knife-edit-20160819-1849-1yztiqq.json
--'  11  12  /tmp/knife-edit-20160819-1843-dnrbhf.json
--'  1  0  /tmp/knife-edit-20160819-1843-dnrbhf.json
--'  11  2  /tmp/knife-edit-20160819-1813-mzpe6a.json
--'  1  0  /tmp/knife-edit-20160819-1813-mzpe6a.json
--'  2  34  ~/cookbooks/book/metadata.rb
--'  1  0  ~/cookbooks/cd
--'  1  0  ./.chef/knife.rb
--'  3  42  ~/cookbooks/book/files/default/test.sh
--'  1  0  ~/cookbooks/book/files/default/test.sh
--'  13  16  ~/cookbooks/book/recipes/default.rb
--'  3  1  ~/.gitconfig
--'  8  0  ~/.gitignore
--'  8  1  ~/.git/config
--'  1  0  ~/.git/config
--'  1  0  ~/.gitconfig
--'  3  26  /tmp/knife-edit-20160819-1475-mfbvuu.json
--'  1  0  /tmp/knife-edit-20160819-1475-mfbvuu.json
--'  3  26  /tmp/knife-edit-20160819-1465-1tjtzzr.json
 
 # History of marks within files (newest to oldest):
 
-> /tmp/knife-edit-20160820-3672-abnilb.json
-	"	10	15
-	^	10	16
-	.	10	15
-	+	10	15
+> /tmp/knife-edit-20160820-4693-1nu858v.json
+	"	13	17
+	^	13	18
+	.	13	4
+	+	12	22
+	+	13	4
 
-> ~/.chef/knife.rb
-	"	2	27
-	^	2	28
-	.	2	0
-	+	12	0
-	+	2	0
+> /tmp/knife-edit-20160820-4683-1cqv0rs.json
+	"	13	17
+	^	13	18
+	.	13	4
+	+	12	29
+	+	13	4
 
-> ~/cookbooks/book/metadata.rb
-	"	6	19
-	^	6	20
-	.	6	19
-	+	8	24
-	+	9	0
-	+	6	19
+> /tmp/knife-edit-20160820-4675-jqoxse.json
+	"	13	17
+	^	13	18
+	.	13	17
+	+	12	28
+	+	13	17
+
+> /tmp/knife-edit-20160820-4667-107hnc2.json
+	"	13	16
+	^	13	17
+	.	13	15
+	+	13	3
+	+	12	3
+	+	13	15
 
 > ~/cookbooks/book/recipes/default.rb
-	"	8	0
-	^	8	0
-	.	9	0
-	+	12	27
-	+	12	0
-	+	12	0
-	+	12	19
-	+	12	19
-	+	12	11
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	0
-	+	12	27
-	+	12	3
-	+	12	0
-	+	5	47
-	+	6	0
-	+	12	0
-	+	6	0
-	+	5	0
-	+	7	0
-	+	5	0
-	+	6	0
-	+	8	0
-	+	9	0
+	"	16	14
+	^	16	15
+	.	16	14
+	+	20	0
+	+	21	0
+	+	22	0
+	+	23	0
+	+	12	16
+	+	18	0
+	+	16	14
 
-> /tmp/knife-edit-20160820-3099-15ua01g.json
-	"	10	16
+> /tmp/knife-edit-20160820-4626-1rouc2n.json
+	"	10	28
+	^	10	29
+	.	10	28
+	+	10	28
 
-> ~/.gitignore
-	"	11	1
-	^	11	2
-	.	11	1
-	+	11	1
+> /tmp/knife-edit-20160820-4616-rfkxva.json
+	"	10	28
+	^	10	29
+	.	10	28
+	+	10	28
 
-> /tmp/knife-edit-20160820-2725-14djpaa.json
-	"	10	15
-	^	10	16
-	.	10	15
-	+	10	15
-
-> /tmp/knife-edit-20160820-2684-ov3ru1.json
-	"	10	21
-	^	10	22
-	.	10	21
-	+	10	21
-
-> ~/cookbooks/yum-elrepo/attributes/elrepo.rb
+> /tmp/knife-edit-20160820-4608-y3dv9l.json
 	"	1	0
 
-> /tmp/knife-edit-20160820-2673-1wu13be.json
-	"	11	2
-	^	10	16
-	.	11	0
-	+	10	15
-	+	11	0
+> /tmp/knife-edit-20160820-4600-nmog4q.json
+	"	16	0
 
-> /tmp/knife-edit-20160820-2665-13gpmtj.json
-	"	10	5
-	^	10	6
-	.	10	5
-	+	10	5
-
-> /tmp/knife-edit-20160820-2661-1rn2w2j.json
-	"	10	5
-	^	10	6
-	.	10	5
-	+	10	5
-
-> /tmp/knife-edit-20160820-2653-dg629o.json
-	"	10	0
-	^	10	1
-	.	10	0
-	+	10	0
-
-> ~/cookbooks/drbd/metadata.json
-	"	1	3204
-	^	1	3205
-	.	1	3204
-	+	1	3204
+> ~/cookbooks/kernel-modules/recipes/default.rb
+	"	28	19
+	^	28	20
+	.	28	20
+	+	35	0
+	+	32	18
+	+	34	0
+	+	28	25
+	+	30	0
+	+	28	20
 
 > ~/cookbooks/drbd/recipes/default.rb
-	"	23	0
-	^	23	0
-	.	22	0
+	"	39	2
+	^	39	3
+	.	26	31
 	+	22	0
+	+	23	47
+	+	24	0
+	+	29	14
+	+	29	24
+	+	29	22
+	+	29	2
+	+	29	0
+	+	29	0
+	+	29	0
+	+	29	0
+	+	26	31
 
-> /tmp/knife-edit-20160820-2617-qvfu4q.json
-	"	11	23
-	^	11	24
-	.	11	4
-	+	11	4
+> ~/cookbooks/drbd/metadata.rb
+	"	10	23
+	^	10	24
+	.	10	10
+	+	9	28
+	+	10	10
 
-> /tmp/knife-edit-20160820-2613-dtbx05.json
-	"	11	23
-	^	11	24
-	.	11	4
-	+	11	4
+> ~/cookbooks/modules/recipes/config.rb
+	"	39	0
+	^	39	0
 
-> /tmp/knife-edit-20160820-2609-e0t553.json
-	"	11	23
-	^	11	24
-	.	11	23
-	+	11	23
+> ~/cookbooks/modules/attributes/default.rb
+	"	14	2
 
-> /tmp/knife-edit-20160820-2603-jqan2t.json
-	"	11	9
-	^	11	10
-	.	11	10
-	+	11	10
+> ~/cookbooks/modules/recipes/default.rb
+	"	29	0
+	^	29	1
+	.	29	0
+	+	29	0
+	+	27	9
+	+	28	13
+	+	23	24
+	+	25	0
+	+	27	13
+	+	28	13
+	+	27	0
+	+	28	0
+	+	29	0
 
-> /tmp/knife-edit-20160819-2579-dfbf3r.json
-	"	11	15
-	^	11	16
-	.	11	15
-	+	11	15
+> ~/cookbooks/modules/metadata.rb
+	"	8	82
+	^	8	83
+	.	8	56
+	+	7	49
+	+	8	56
+
+> ~/cookbooks/drbd/recipes/pair.rb
+	"	74	0
+
+> /tmp/knife-edit-20160820-4033-hzyqxh.json
+	"	20	4
+	.	20	0
+	+	20	0
+
+> /tmp/knife-edit-20160820-4025-h1cctt.json
+	"	21	4
+	.	21	0
+	+	21	0
+
+> /tmp/knife-edit-20160820-3981-hxz073.json
+	"	21	14
+	^	21	15
+	.	21	14
+	+	21	14

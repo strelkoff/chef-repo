@@ -9,8 +9,16 @@ package 'man' do
   action :install
 end
 
-cookbook_file "/root/test.sh" do
-  source "test.sh"
-  mode "0644"
+package 'vim' do
+  action :install
 end
+
+package 'parted' do
+  action :install
+end
+
+#cookbook_file "/root/test.sh" do
+#  source "test.sh"
+#  mode "0644"
+#end
 
