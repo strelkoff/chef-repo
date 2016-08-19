@@ -8,9 +8,9 @@
 # hlsearch on (H) or off (h):
 ~H
 # Command Line History (newest to oldest):
+:q!
 :q
 :wq
-:q!
 
 # Search String History (newest to oldest):
 
@@ -22,27 +22,63 @@
 
 # Registers:
 ""1	LINE	0
-		url = git@github.com:strelkoff/chef-repo.git
+	current_dir = File.dirname(__FILE__)
 "2	LINE	0
-		url = https://m.strelkov@github.com/strelkoff/chef-repo.git
+	cookbook_path [ "#{current_dir}/../cookbooks" ]
 "3	LINE	0
-		url = https://strelkoff@github.com/strelkoff/chef-repo.git
+	current_dir = File.dirname(__FILE__)
+"4	LINE	0
+	    cookbook_path ["#{current_dir}/../cookbooks"]
+"5	LINE	0
+	knife[:cookbook_path] = ''
+"6	LINE	0
+	
+"7	LINE	0
+	# Copyright 2016, YOUR_COMPANY_NAME
+"8	LINE	0
+	#
+"9	LINE	0
+	# All rights reserved -
 "-	CHAR	0
-	t
+	/
 
 # File marks:
-'0  3  1  ~/.gitconfig
-'1  9  3  ~/.gitignore
-'2  8  1  ~/.git/config
-'3  8  4  ~/.gitignore
-'4  1  0  ~/.gitignore
-'5  1  0  ~/cookbooks/book/recipes/default.rb
-'6  3  26  /tmp/knife-edit-20160819-1475-mfbvuu.json
-'7  3  26  /tmp/knife-edit-20160819-1465-1tjtzzr.json
-'8  3  30  /tmp/knife-edit-20160819-1461-18stg55.json
-'9  10  17  /tmp/knife-edit-20160819-1449-1inyqav.json
+'0  4  0  ~/.chef/knife.rb
+'1  10  0  ~/.chef/knife.rb
+'2  9  0  ~/.chef/knife.rb
+'3  10  20  /tmp/knife-edit-20160819-1870-e2agjz.json
+'4  1  0  /tmp/knife-edit-20160819-1865-15a98yf.json
+'5  4  0  /tmp/knife-edit-20160819-1859-z51a7r.json
+'6  9  19  /tmp/knife-edit-20160819-1849-1yztiqq.json
+'7  11  12  /tmp/knife-edit-20160819-1843-dnrbhf.json
+'8  11  2  /tmp/knife-edit-20160819-1813-mzpe6a.json
+'9  2  34  ~/cookbooks/book/metadata.rb
 
 # Jumplist (newest first):
+-'  4  0  ~/.chef/knife.rb
+-'  10  0  ~/.chef/knife.rb
+-'  9  0  ~/.chef/knife.rb
+-'  10  20  /tmp/knife-edit-20160819-1870-e2agjz.json
+-'  1  0  /tmp/knife-edit-20160819-1870-e2agjz.json
+-'  1  0  /tmp/knife-edit-20160819-1865-15a98yf.json
+-'  4  0  /tmp/knife-edit-20160819-1859-z51a7r.json
+-'  1  0  /tmp/knife-edit-20160819-1859-z51a7r.json
+-'  9  19  /tmp/knife-edit-20160819-1849-1yztiqq.json
+-'  1  0  /tmp/knife-edit-20160819-1849-1yztiqq.json
+-'  11  12  /tmp/knife-edit-20160819-1843-dnrbhf.json
+-'  1  0  /tmp/knife-edit-20160819-1843-dnrbhf.json
+-'  11  2  /tmp/knife-edit-20160819-1813-mzpe6a.json
+-'  1  0  /tmp/knife-edit-20160819-1813-mzpe6a.json
+-'  2  34  ~/cookbooks/book/metadata.rb
+-'  1  0  ~/cookbooks/book/metadata.rb
+-'  1  0  ~/cookbooks/cd
+-'  1  0  ./.chef/knife.rb
+-'  1  0  ~/.chef/knife.rb
+-'  3  42  ~/cookbooks/book/files/default/test.sh
+-'  1  0  ~/cookbooks/book/files/default/test.sh
+-'  11  16  ~/cookbooks/book/recipes/default.rb
+-'  9  0  ~/cookbooks/book/recipes/default.rb
+-'  1  0  ~/cookbooks/book/recipes/default.rb
 -'  3  1  ~/.gitconfig
 -'  9  3  ~/.gitignore
 -'  8  0  ~/.gitignore
@@ -50,7 +86,6 @@
 -'  1  0  ~/.git/config
 -'  1  0  ~/.gitconfig
 -'  1  0  ~/.gitignore
--'  1  0  ~/cookbooks/book/recipes/default.rb
 -'  3  26  /tmp/knife-edit-20160819-1475-mfbvuu.json
 -'  1  0  /tmp/knife-edit-20160819-1475-mfbvuu.json
 -'  3  26  /tmp/knife-edit-20160819-1465-1tjtzzr.json
@@ -111,7 +146,6 @@
 -'  1  0  /tmp/knife-edit-20160819-1449-1inyqav.json
 -'  10  17  /tmp/knife-edit-20160819-1449-1inyqav.json
 -'  1  0  /tmp/knife-edit-20160819-1449-1inyqav.json
--'  1  0  ~/cookbooks/book/recipes/default.rb
 -'  3  26  /tmp/knife-edit-20160819-1475-mfbvuu.json
 -'  1  0  /tmp/knife-edit-20160819-1475-mfbvuu.json
 -'  3  26  /tmp/knife-edit-20160819-1465-1tjtzzr.json
@@ -119,29 +153,85 @@
 -'  3  30  /tmp/knife-edit-20160819-1461-18stg55.json
 -'  1  0  /tmp/knife-edit-20160819-1461-18stg55.json
 -'  10  17  /tmp/knife-edit-20160819-1449-1inyqav.json
--'  1  0  /tmp/knife-edit-20160819-1449-1inyqav.json
--'  10  17  /tmp/knife-edit-20160819-1449-1inyqav.json
--'  1  0  /tmp/knife-edit-20160819-1449-1inyqav.json
--'  3  30  /tmp/knife-edit-20160819-1461-18stg55.json
--'  1  0  /tmp/knife-edit-20160819-1461-18stg55.json
--'  10  17  /tmp/knife-edit-20160819-1449-1inyqav.json
--'  1  0  /tmp/knife-edit-20160819-1449-1inyqav.json
--'  10  17  /tmp/knife-edit-20160819-1449-1inyqav.json
--'  1  0  /tmp/knife-edit-20160819-1449-1inyqav.json
--'  3  26  /tmp/knife-edit-20160819-1465-1tjtzzr.json
--'  1  0  /tmp/knife-edit-20160819-1465-1tjtzzr.json
--'  3  30  /tmp/knife-edit-20160819-1461-18stg55.json
--'  1  0  /tmp/knife-edit-20160819-1461-18stg55.json
--'  10  17  /tmp/knife-edit-20160819-1449-1inyqav.json
--'  1  0  /tmp/knife-edit-20160819-1449-1inyqav.json
--'  10  17  /tmp/knife-edit-20160819-1449-1inyqav.json
--'  1  0  /tmp/knife-edit-20160819-1449-1inyqav.json
--'  3  30  /tmp/knife-edit-20160819-1461-18stg55.json
--'  1  0  /tmp/knife-edit-20160819-1461-18stg55.json
--'  10  17  /tmp/knife-edit-20160819-1449-1inyqav.json
--'  1  0  /tmp/knife-edit-20160819-1449-1inyqav.json
 
 # History of marks within files (newest to oldest):
+
+> ~/.chef/knife.rb
+	"	4	0
+	.	4	0
+	+	9	38
+	+	11	0
+	+	8	72
+	+	4	0
+	+	8	72
+	+	9	0
+	+	4	0
+
+> /tmp/knife-edit-20160819-1870-e2agjz.json
+	"	10	20
+	^	10	21
+	.	10	18
+	+	10	18
+
+> /tmp/knife-edit-20160819-1865-15a98yf.json
+	"	1	0
+
+> /tmp/knife-edit-20160819-1859-z51a7r.json
+	"	4	0
+	^	4	0
+	.	3	29
+	+	3	29
+
+> /tmp/knife-edit-20160819-1849-1yztiqq.json
+	"	9	19
+	^	9	20
+	.	9	19
+	+	9	19
+
+> /tmp/knife-edit-20160819-1843-dnrbhf.json
+	"	11	12
+	^	11	13
+	.	11	12
+	+	11	12
+
+> /tmp/knife-edit-20160819-1813-mzpe6a.json
+	"	11	2
+	^	10	13
+	.	11	0
+	+	10	12
+	+	11	0
+
+> ~/cookbooks/book/metadata.rb
+	"	2	34
+	^	3	33
+	.	3	32
+	+	5	30
+	+	3	32
+
+> ~/cookbooks/cd
+	"	1	0
+
+> ./.chef/knife.rb
+	"	1	0
+
+> ~/cookbooks/book/files/default/test.sh
+	"	3	42
+	^	3	43
+	.	3	42
+	+	3	42
+
+> ~/cookbooks/book/recipes/default.rb
+	"	11	16
+	^	11	17
+	.	11	16
+	+	15	0
+	+	5	1
+	+	8	0
+	+	6	11
+	+	8	3
+	+	13	0
+	+	10	27
+	+	11	16
 
 > ~/.gitconfig
 	"	3	1
@@ -158,9 +248,6 @@
 	.	8	0
 	+	9	0
 	+	8	0
-
-> ~/cookbooks/book/recipes/default.rb
-	"	1	0
 
 > /tmp/knife-edit-20160819-1475-mfbvuu.json
 	"	3	26
