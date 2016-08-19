@@ -11,9 +11,9 @@
 ~MSle0~/depe
 
 # Command Line History (newest to oldest):
+:q
 :wq
 :10
-:q
 :q!
 :Q
 
@@ -49,18 +49,19 @@
 	o
 
 # File marks:
-'0  10  0  ~/cookbooks/book/recipes/default.rb
-'1  12  2  ~/cookbooks/book/recipes/default.rb
-'2  10  15  /tmp/knife-edit-20160820-2725-14djpaa.json
-'3  10  21  /tmp/knife-edit-20160820-2684-ov3ru1.json
-'4  1  0  ~/cookbooks/yum-elrepo/attributes/elrepo.rb
-'5  11  2  /tmp/knife-edit-20160820-2673-1wu13be.json
-'6  10  5  /tmp/knife-edit-20160820-2665-13gpmtj.json
-'7  10  5  /tmp/knife-edit-20160820-2661-1rn2w2j.json
-'8  10  0  /tmp/knife-edit-20160820-2653-dg629o.json
-'9  1  3204  ~/cookbooks/drbd/metadata.json
+'0  1  0  ~/.gitignore
+'1  10  0  ~/cookbooks/book/recipes/default.rb
+'2  12  2  ~/cookbooks/book/recipes/default.rb
+'3  10  15  /tmp/knife-edit-20160820-2725-14djpaa.json
+'4  10  21  /tmp/knife-edit-20160820-2684-ov3ru1.json
+'5  1  0  ~/cookbooks/yum-elrepo/attributes/elrepo.rb
+'6  11  2  /tmp/knife-edit-20160820-2673-1wu13be.json
+'7  10  5  /tmp/knife-edit-20160820-2665-13gpmtj.json
+'8  10  5  /tmp/knife-edit-20160820-2661-1rn2w2j.json
+'9  10  0  /tmp/knife-edit-20160820-2653-dg629o.json
 
 # Jumplist (newest first):
+-'  1  0  ~/.gitignore
 -'  10  0  ~/cookbooks/book/recipes/default.rb
 -'  12  0  ~/cookbooks/book/recipes/default.rb
 -'  10  15  /tmp/knife-edit-20160820-2725-14djpaa.json
@@ -146,7 +147,6 @@
 -'  8  1  ~/.git/config
 -'  1  0  ~/.git/config
 -'  1  0  ~/.gitconfig
--'  1  0  ~/.gitignore
 -'  3  26  /tmp/knife-edit-20160819-1475-mfbvuu.json
 -'  1  0  /tmp/knife-edit-20160819-1475-mfbvuu.json
 -'  3  26  /tmp/knife-edit-20160819-1465-1tjtzzr.json
@@ -160,6 +160,9 @@
 -'  3  30  /tmp/knife-edit-20160819-1461-18stg55.json
 
 # History of marks within files (newest to oldest):
+
+> ~/.gitignore
+	"	1	0
 
 > ~/cookbooks/book/recipes/default.rb
 	"	10	0
@@ -299,9 +302,3 @@
 
 > /tmp/knife-edit-20160819-2534-ypm0hb.json
 	"	1	0
-
-> /tmp/knife-edit-20160819-2525-owwm36.json
-	"	11	18
-	^	11	19
-	.	11	18
-	+	11	18
