@@ -2,12 +2,10 @@
 # Cookbook Name:: book
 # Recipe:: default
 #
+node.default['yum']['elrepo']['enabled'] = true
+include_recipe 'yum-elrepo'
 
 package 'man' do
-  action :install
-end
-
-package 'elrepo-release' do
   action :install
 end
 
