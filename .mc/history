@@ -1,0 +1,21 @@
+
+[mc.shared.search]
+0=role
+
+[Dir Hist New Right Panel]
+0=/home/chef/chef-repo
+
+[cmdline]
+0=exit
+1=
+
+[Dir Hist New Left Panel]
+0=/home/chef/chef-repo/drbd-0.10.0.tar.gz#utar/drbd/templates/default
+1=/home/chef/chef-repo/drbd-0.10.0.tar.gz#utar/drbd/templates
+2=/home/chef/chef-repo/drbd-0.10.0.tar.gz#utar/drbd/recipes
+3=/home/chef/chef-repo/drbd-0.10.0.tar.gz#utar/drbd/attributes
+4=/home/chef/chef-repo/yum-3.11.0.tar.gz#utar/yum
+5=/home/chef/chef-repo/yum-3.11.0.tar.gz#utar
+6=/home/chef/chef-repo/drbd-0.10.0.tar.gz#utar/drbd
+7=/home/chef/chef-repo/drbd-0.10.0.tar.gz#utar
+8=/home/chef/chef-repo
